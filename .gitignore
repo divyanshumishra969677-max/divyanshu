@@ -1,0 +1,12 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Logs & Temp files
+*.log
+screenshot.png
+temp_profile/
+scratch/

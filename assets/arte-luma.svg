@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="warmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5ede3"/>
+      <stop offset="100%" stop-color="#e8decb"/>
+    </linearGradient>
+    <linearGradient id="chairLeather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8c5835"/>
+      <stop offset="50%" stop-color="#6e4225"/>
+      <stop offset="100%" stop-color="#422513"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#warmBg)"/>
+  
+  <!-- Subtle Header -->
+  <line x1="24" y1="42" x2="576" y2="42" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+  <circle cx="42" cy="28" r="3.5" fill="#422513" opacity="0.6"/>
+  <text x="56" y="32" fill="#422513" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1">ARTE &amp; LUMA</text>
+
+  <!-- Left Editorial Typography -->
+  <text x="44" y="105" fill="#2d2218" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="700" letter-spacing="0.5">Refined Spaces.</text>
+  <text x="44" y="135" fill="#2d2218" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="700" letter-spacing="0.5">Inspired Living.</text>
+  <text x="44" y="170" fill="#6d5e50" font-family="sans-serif" font-size="11" line-height="1.5">Bespoke interior design &amp; architectural styling.</text>
+
+  <!-- Button -->
+  <rect x="44" y="210" width="100" height="28" rx="14" fill="#2d2218"/>
+  <text x="66" y="228" fill="#f5ede3" font-family="sans-serif" font-size="9.5" font-weight="600" letter-spacing="1">VIEW STUDIO</text>
+
+  <!-- Right Interior Showcase Area -->
+  <g transform="translate(320, 56)">
+    <!-- Room Wall Frame -->
+    <rect x="0" y="0" width="240" height="280" fill="#e0d4c1" rx="4"/>
+    <!-- Floor Line -->
+    <line x1="0" y1="210" x2="240" y2="210" stroke="#c4b49c" stroke-width="2"/>
+    <rect x="0" y="212" width="240" height="68" fill="#d2c1a8"/>
+    
+    <!-- Wall Art Frame -->
+    <rect x="35" y="30" width="60" height="80" fill="#eae1d2" stroke="#66523e" stroke-width="3"/>
+    <line x1="45" y1="70" x2="85" y2="70" stroke="#8c755c" stroke-width="1.5"/>
+
+    <!-- Mid-Century Armchair Illustration -->
+    <!-- Chair Legs -->
+    <line x1="120" y1="210" x2="105" y2="245" stroke="#221810" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="180" y1="210" x2="195" y2="245" stroke="#221810" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="135" y1="210" x2="125" y2="240" stroke="#332418" stroke-width="3" stroke-linecap="round"/>
+    <line x1="165" y1="210" x2="175" y2="240" stroke="#332418" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Chair Backrest & Cushion -->
+    <rect x="110" y="130" width="80" height="60" rx="12" fill="url(#chairLeather)" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.15))"/>
+    <rect x="100" y="170" width="100" height="40" rx="10" fill="url(#chairLeather)"/>
+    <!-- Armrests -->
+    <path d="M95 160 Q100 150 115 155 L115 185 Q95 185 95 160 Z" fill="#54321b"/>
+    <path d="M205 160 Q200 150 185 155 L185 185 Q205 185 205 160 Z" fill="#54321b"/>
+  </g>
+</svg>

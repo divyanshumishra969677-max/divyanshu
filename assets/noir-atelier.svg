@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="noirBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0d"/>
+      <stop offset="60%" stop-color="#0d0d12"/>
+      <stop offset="100%" stop-color="#070709"/>
+    </linearGradient>
+    <radialGradient id="modelGlow" cx="75%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#e8cca8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0a0a0d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skinGrad" x1="20%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#edd5be"/>
+      <stop offset="50%" stop-color="#d4b494"/>
+      <stop offset="100%" stop-color="#806246"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" fill="url(#noirBg)"/>
+  <rect width="600" height="380" fill="url(#modelGlow)"/>
+
+  <!-- Top bar -->
+  <line x1="24" y1="42" x2="576" y2="42" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="44" y="32" fill="#c4b5a0" font-family="'Cinzel', 'Playfair Display', serif" font-size="10" letter-spacing="2">NOIR ATELIER</text>
+  <text x="530" y="32" fill="#786f63" font-family="sans-serif" font-size="9" letter-spacing="1.5">PARIS</text>
+
+  <!-- Left Editorial Typography -->
+  <text x="44" y="105" fill="#e8dccb" font-family="'Cinzel', 'Playfair Display', serif" font-size="20" font-weight="600" letter-spacing="3">COUTURE</text>
+  <text x="44" y="132" fill="#e8dccb" font-family="'Cinzel', 'Playfair Display', serif" font-size="20" font-weight="600" letter-spacing="3">BEYOND</text>
+  <text x="44" y="159" fill="#e8dccb" font-family="'Cinzel', 'Playfair Display', serif" font-size="20" font-weight="600" letter-spacing="3">SEASON</text>
+  <line x1="44" y1="180" x2="160" y2="180" stroke="#c4b5a0" stroke-width="0.8" opacity="0.4"/>
+  <text x="44" y="205" fill="#8c8274" font-family="sans-serif" font-size="10" letter-spacing="1">AUTUMN / WINTER 2024</text>
+
+  <!-- CTA -->
+  <rect x="44" y="230" width="105" height="26" rx="13" fill="none" stroke="#c4b5a0" stroke-width="1"/>
+  <text x="62" y="247" fill="#e8dccb" font-family="sans-serif" font-size="9" letter-spacing="1.5">DISCOVER</text>
+
+  <!-- Right Fashion Model Silhouette & Side Profile -->
+  <g transform="translate(380, 50)" filter="drop-shadow(0 15px 30px rgba(0,0,0,0.9))">
+    <!-- Tailored Coat Shoulders & Suit Lapel -->
+    <path d="M-10 270 Q40 180 80 160 L140 160 Q170 190 200 270 Z" fill="#141419"/>
+    <!-- Collar & Tie -->
+    <path d="M70 160 L90 230 L110 160 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M85 170 L95 170 L92 240 L88 240 Z" fill="#000000"/>
+    <path d="M50 165 L85 220 L75 250 L35 180 Z" fill="#1c1c24"/>
+    <path d="M130 165 L95 220 L105 250 L145 180 Z" fill="#1c1c24"/>
+
+    <!-- Neck & Jawline -->
+    <path d="M75 160 L78 115 Q95 125 110 115 L112 160 Z" fill="url(#skinGrad)"/>
+    
+    <!-- Profile Head -->
+    <path d="M80 60 Q105 50 120 70 Q130 90 122 105 Q115 120 95 120 Q75 118 72 95 Q70 75 80 60 Z" fill="url(#skinGrad)"/>
+    <!-- Hair (Slicked back haute couture style) -->
+    <path d="M68 65 Q72 35 100 35 Q125 40 135 65 Q140 90 128 100 Q122 80 110 65 Q95 55 75 65 Z" fill="#111116"/>
+    <!-- Ear & Earring detail -->
+    <ellipse cx="88" cy="92" rx="4" ry="6" fill="#cca684"/>
+    <circle cx="89" cy="100" r="1.5" fill="#f8e7b9" filter="drop-shadow(0 0 2px #fff)"/>
+  </g>
+</svg>

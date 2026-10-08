@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandro Marin — Web Designer & Developer Portfolio</title>
+  
+  <!-- Google Fonts: Bebas Neue, Cinzel, Playfair Display, Plus Jakarta Sans, Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&family=Cinzel:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fixed Background Video Canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Atmospheric Vignette Overlay for Depth & Contrast -->
+  <div class="canvas-vignette"></div>
+
+  <!-- Minimal Preloader -->
+  <div id="loader" class="loader">
+    <div class="loader-track">
+      <div id="loader-bar" class="loader-bar"></div>
+    </div>
+    <div id="loader-text" class="loader-text">0%</div>
+  </div>
+
+  <!-- Page Content Shell -->
+  <div class="page-wrapper">
+
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-left">
+        <span class="sub-label">WEB DESIGNER</span>
+        <span class="sub-label">PORTFOLIO</span>
+      </div>
+      <div class="nav-center">
+        <div class="monogram-logo">AM</div>
+      </div>
+      <div class="nav-right">
+        <span class="sub-label">AVAILABLE FOR</span>
+        <span class="sub-label">FREELANCE &amp; FULL-TIME</span>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Monumental Headline -->
+      <div class="hero-title-wrap">
+        <h1 class="hero-title">PORTFOLIO</h1>
+      </div>
+
+      <!-- Hero Flanking Copy -->
+      <div class="hero-sub-grid">
+        <div class="hero-left-sub">
+          <p class="tagline-top">PREMIUM WEBSITES</p>
+          <p class="tagline-bottom">THAT DRIVE <em>IMPACT.</em></p>
+        </div>
+
+        <div class="hero-right-sub">
+          <p class="hero-desc">
+            I design and build modern, high-converting websites that elevate brands and deliver real results.
+          </p>
+          <div class="signature">Alejandro Marin</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile & Metrics Bar (Bordered Box) -->
+    <section class="profile-bar-section">
+      <div class="profile-box">
+        <!-- Col 1: Identity -->
+        <div class="profile-col profile-col-identity">
+          <h2 class="designer-name">ALEJANDRO<br />MARIN</h2>
+          <div class="designer-title-line">
+            <span class="line-divider"></span>
+            <span class="designer-role">WEB DESIGNER &amp; DEVELOPER</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Bio & Location -->
+        <div class="profile-col profile-col-bio">
+          <p class="bio-text">
+            I help ambitious brands and entrepreneurs stand out online with strategic design, clean code and seamless experiences.
+          </p>
+          <div class="location-row">
+            <svg class="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>BARCELONA, SPAIN</span>
+          </div>
+          <div class="pill-badge">AVAILABLE WORLDWIDE</div>
+        </div>
+
+        <!-- Col 3: Key Stats -->
+        <div class="profile-col profile-col-stats">
+          <div class="stat-row">
+            <div class="stat-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 3v18M3 12h18"/>
+              </svg>
+            </div>
+            <div class="stat-number">6+</div>
+            <div class="stat-label">YEARS EXPERIENCE</div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <div class="stat-number">80+</div>
+            <div class="stat-label">PROJECTS COMPLETED</div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9" stroke-width="3"/>
+                <line x1="15" y1="9" x2="15.01" y2="9" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="stat-number">40+</div>
+            <div class="stat-label">HAPPY CLIENTS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section class="selected-work-section" id="projects">
+      <div class="section-header">
+        <span class="section-title">SELECTED WORK</span>
+        <div class="section-line"></div>
+        <a href="#projects" class="section-link">VIEW ALL PROJECTS <span class="arrow">→</span></a>
+      </div>
+
+      <div class="work-grid">
+        <!-- Project 1: Nexus Studio -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/nexus-studio.svg" alt="Nexus Studio" class="project-thumb" />
+          </div>
+          <div class="project-meta">
+            <div class="project-info">
+              <h3 class="project-name">NEXUS STUDIO</h3>
+              <p class="project-category">Creative Agency Website</p>
+            </div>
+            <span class="project-year">2024</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Arte & Luma -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/arte-luma.svg" alt="Arte & Luma" class="project-thumb" />
+          </div>
+          <div class="project-meta">
+            <div class="project-info">
+              <h3 class="project-name">ARTE &amp; LUMA</h3>
+              <p class="project-category">Interior Design Studio</p>
+            </div>
+            <span class="project-year">2024</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Payera -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/payera.svg" alt="Payera" class="project-thumb" />
+          </div>
+          <div class="project-meta">
+            <div class="project-info">
+              <h3 class="project-name">PAYERA</h3>
+              <p class="project-category">Fintech Landing Page</p>
+            </div>
+            <span class="project-year">2024</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Noir Atelier -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/noir-atelier.svg" alt="Noir Atelier" class="project-thumb" />
+          </div>
+          <div class="project-meta">
+            <div class="project-info">
+              <h3 class="project-name">NOIR ATELIER</h3>
+              <p class="project-category">Luxury Fashion Brand</p>
+            </div>
+            <span class="project-year">2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento Grid Section: Education, Experience, Process & Testimonial -->
+    <section class="bento-section">
+      <div class="bento-box">
+        
+        <!-- Column 1: Education -->
+        <div class="bento-col bento-col-edu">
+          <div class="bento-col-header">
+            <svg class="bento-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            <span class="bento-header-title">EDUCATION</span>
+          </div>
+
+          <div class="bento-item-list">
+            <div class="bento-entry">
+              <h4 class="entry-title">BA in Visual Communication</h4>
+              <p class="entry-org">ELISAVA Barcelona</p>
+              <span class="entry-time">2015 – 2019</span>
+            </div>
+
+            <div class="bento-entry">
+              <h4 class="entry-title">Web Design Certification</h4>
+              <p class="entry-org">Interaction Design Foundation</p>
+              <span class="entry-time">2020</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Experience -->
+        <div class="bento-col bento-col-exp">
+          <div class="bento-col-header">
+            <svg class="bento-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+            <span class="bento-header-title">EXPERIENCE</span>
+          </div>
+
+          <div class="bento-item-list">
+            <div class="bento-entry">
+              <h4 class="entry-title">Senior Web Designer</h4>
+              <p class="entry-org">NEXUS AGENCY</p>
+              <span class="entry-time">2022 – Present</span>
+            </div>
+
+            <div class="bento-entry">
+              <h4 class="entry-title">Web Designer</h4>
+              <p class="entry-org">DIGITAL CRAFT</p>
+              <span class="entry-time">2020 – 2022</span>
+            </div>
+
+            <div class="bento-entry">
+              <h4 class="entry-title">Junior Designer</h4>
+              <p class="entry-org">STUDIO NORTE</p>
+              <span class="entry-time">2019 – 2020</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: My Design Process -->
+        <div class="bento-col bento-col-process">
+          <div class="bento-col-header">
+            <svg class="bento-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+            <span class="bento-header-title">MY DESIGN PROCESS</span>
+          </div>
+
+          <div class="process-steps">
+            <div class="process-step">
+              <span class="step-num">01</span>
+              <div class="step-info">
+                <strong class="step-name">DISCOVER</strong>
+                <p class="step-text">Understanding goals, audience and project scope.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="step-num">02</span>
+              <div class="step-info">
+                <strong class="step-name">STRATEGIZE</strong>
+                <p class="step-text">Planning the structure, user flow and visual direction.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="step-num">03</span>
+              <div class="step-info">
+                <strong class="step-name">DESIGN</strong>
+                <p class="step-text">Crafting elegant UI with a focus on clarity and emotion.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="step-num">04</span>
+              <div class="step-info">
+                <strong class="step-name">DEVELOP</strong>
+                <p class="step-text">Bringing the design to life with clean, responsive code.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="step-num">05</span>
+              <div class="step-info">
+                <strong class="step-name">REFINE</strong>
+                <p class="step-text">Testing, optimizing and delivering the best experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Row (Spanning Edu & Exp under them) -->
+        <div class="bento-col bento-col-testimonial">
+          <div class="testimonial-content">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/james-thompson.svg" alt="James Thompson" class="testimonial-avatar" />
+            </div>
+            <div class="testimonial-text-wrap">
+              <div class="quote-symbol">“</div>
+              <p class="quote-body">
+                Alejandro is a rare talent—creative, reliable and detail-oriented. The site he built exceeded all our expectations.
+              </p>
+              <div class="quote-author">
+                <span class="author-name">— JAMES THOMPSON</span>
+                <span class="author-role">CEO, NEXUS STUDIO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer / Let's Connect Section -->
+    <footer class="footer-section">
+      <div class="footer-grid">
+        
+        <!-- Left Column: Big Statement -->
+        <div class="footer-col footer-col-statement">
+          <h2 class="statement-headline">
+            LET'S CREATE<br />
+            SOMETHING<br />
+            EXTRAORDINARY
+          </h2>
+          <p class="statement-sub">
+            I'M OPEN TO NEW PROJECTS AND EXCITING COLLABORATIONS.
+          </p>
+        </div>
+
+        <!-- Middle Column: Let's Connect -->
+        <div class="footer-col footer-col-connect">
+          <h3 class="footer-heading">LET'S CONNECT</h3>
+          <ul class="connect-list">
+            <li>
+              <a href="mailto:hello@alejandromarin.com" class="connect-link">
+                <svg class="connect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>hello@alejandromarin.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.alejandromarin.com" target="_blank" rel="noopener noreferrer" class="connect-link">
+                <svg class="connect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <span>www.alejandromarin.com</span>
+              </a>
+            </li>
+            <li>
+              <div class="connect-link non-clickable">
+                <svg class="connect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Barcelona, Spain</span>
+              </div>
+            </li>
+            <li>
+              <a href="https://instagram.com/alejandromarin.design" target="_blank" rel="noopener noreferrer" class="connect-link">
+                <svg class="connect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <span>@alejandromarin.design</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Column: Let's Work Together & QR -->
+        <div class="footer-col footer-col-action">
+          <h3 class="footer-heading">LET'S WORK TOGETHER</h3>
+          <p class="action-desc">
+            Have a project in mind or just want to say hello? I'd love to hear from you.
+          </p>
+
+          <a href="mailto:hello@alejandromarin.com" class="btn-touch">
+            <span>GET IN TOUCH</span>
+            <span class="btn-arrow">→</span>
+          </a>
+
+          <div class="qr-block">
+            <div class="qr-frame">
+              <img src="assets/qr-code.svg" alt="Scan QR Code" class="qr-img" />
+            </div>
+            <div class="qr-text">
+              <span>SCAN TO VIEW</span>
+              <span>MY PORTFOLIO</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

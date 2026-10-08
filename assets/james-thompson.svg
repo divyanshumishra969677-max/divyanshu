@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="photoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c202a"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </linearGradient>
+    <linearGradient id="skinBw" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#cfd5df"/>
+      <stop offset="50%" stop-color="#8a92a0"/>
+      <stop offset="100%" stop-color="#2d3340"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="240" fill="url(#photoGrad)"/>
+  
+  <!-- Shoulders & Coat -->
+  <path d="M10 240 Q40 180 80 170 L120 170 Q160 180 190 240 Z" fill="#0f1218"/>
+  <path d="M75 170 L100 210 L125 170 Z" fill="#2d3340"/>
+  
+  <!-- Neck -->
+  <rect x="85" y="135" width="30" height="40" rx="6" fill="#6d7685"/>
+  
+  <!-- Head & Face -->
+  <ellipse cx="100" cy="95" rx="34" ry="44" fill="url(#skinBw)"/>
+  
+  <!-- Hair & Beard -->
+  <path d="M64 85 Q62 45 100 42 Q138 45 136 85 Q125 55 100 55 Q75 55 64 85 Z" fill="#181b22"/>
+  <path d="M72 105 Q78 142 100 142 Q122 142 128 105 Q115 130 100 130 Q85 130 72 105 Z" fill="#2d3340" opacity="0.65"/>
+  
+  <!-- Eyes & Eyebrows -->
+  <ellipse cx="88" cy="90" rx="4" ry="2.5" fill="#1e222a"/>
+  <ellipse cx="112" cy="90" rx="4" ry="2.5" fill="#1e222a"/>
+  <path d="M82 82 Q88 80 94 83" stroke="#181b22" stroke-width="2" fill="none"/>
+  <path d="M106 83 Q112 80 118 82" stroke="#181b22" stroke-width="2" fill="none"/>
+  
+  <!-- Nose & Mouth -->
+  <path d="M100 90 L98 106 L103 107" stroke="#4d5565" stroke-width="1.8" fill="none"/>
+  <line x1="93" y1="118" x2="107" y2="118" stroke="#373d49" stroke-width="2"/>
+</svg>
