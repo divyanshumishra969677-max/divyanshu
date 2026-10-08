@@ -254,6 +254,7 @@
   function init() {
     handleResize();
     window.addEventListener('resize', handleResize, { passive: true });
+    window.addEventListener('orientationchange', handleResize, { passive: true });
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Begin preload and animation loop
